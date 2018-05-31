@@ -1,0 +1,30 @@
+* {
+    text-align: center;
+    margin: 0 auto;
+    background-color: ;
+    color: ;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(35, 39, 42, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+.navbar li {
+    display: inline;
+    float: left;
+    
+} 
+
+.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: rgba(35, 39, 42, 1);
+    text-decoration: none;
+} 
