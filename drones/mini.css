@@ -21,19 +21,36 @@ body {
     text-align: center;
     color: rgba(31, 39, 27, 1);
     padding-left: 20%;
+    line-height: 1
 }
 
-.navbar ul {
+.header {
+    line-height: 0.2
+}
+
+.image {
+    width: 100%;
+}
+
+.drone1 {
+    width: 80%;
+}
+
+
+
+
+
+
+
+.navbar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: rgba(255, 210, 63, 1);
     position: fixed;
     top: 0;
     width: 20%;
     height: 100%;
-    position: fixed;
     overflow: auto;
 } 
 
@@ -44,7 +61,7 @@ body {
     text-align: left;
 } 
 
-.navbar li a {
+.navbar li a, .navbar_breaks li{
     display: block;
     width: auto;
     padding: 10px 20px;
@@ -55,3 +72,7 @@ body {
 .navbar li a:hover {
     background-color: rgba(238, 66, 102, 1);
 } 
+
+.navbar_breaks li {
+    text-align: center;
+}
