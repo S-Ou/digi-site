@@ -62,15 +62,16 @@ h1 {
 
 .navbartop ul { 
     top: 0;
-    height: 90%;
-    margin-bottom: 90%;
+    height: 85%;
+    margin-bottom: 85%;
     /* background-color: rgba(255, 210, 63, 1); */
 }
 
 .navbarbottom ul {
     position: fixed;
-    top: 90%;
-    height: 10%;
+    top: 85%;
+    height: 15%;
+    bottom: 0;
 }
 
 
@@ -82,7 +83,7 @@ h1 {
     text-align: left;
 } 
 
-.navbar li a, .navbar_breaks li{
+.navbar li a, .navfooter{
     display: block;
     width: auto;
     padding: 10px 20px;
@@ -93,11 +94,3 @@ h1 {
 .navbar li a:hover {
     background-color: rgba(238, 66, 102, 1);
 } 
-
-.navbar_breaks li {
-    text-align: center;
-}
-
-.navbar_bottom {
-    vertical-align: bottom;
-}
