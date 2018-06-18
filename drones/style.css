@@ -38,11 +38,15 @@ h1 {
 }
 
 .placeholder {
-    width: 15%
+    width: 15%;
 }
 
 .placeholder2 {
-    width: 30%
+    width: 30%;
+}
+
+.header404 {
+    vertical-align: middle;
 }
 
 
