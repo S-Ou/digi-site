@@ -1,5 +1,0 @@
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-ErrorDocument 404 notfound.html
-order deny,allow
