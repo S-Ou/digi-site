@@ -1,109 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
-html {
-
-}
-
 body { 
     font-family: 'Roboto';
-    font-size: 22px;
-    background-color: rgba(243, 252, 240, 1);
+    font-size: 2vw;
+    background-color: white;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .all {
-    text-align: center;
-    color: rgba(31, 39, 27, 1);
+    color: black;
     padding-left: 20%;
-    line-height: 1
-}
-h1 {
-    line-height: 0.2
+    line-height: 1;
 }
 
-.image {
-    width: 100%;
-}
-
-.drone1 {
-    width: 70%;
-}
-
-.placeholder {
-    width: 15%;
-}
-
-.placeholder2 {
-    width: 30%;
-}
-
-.header404 {
-    vertical-align: middle;
-}
-
-
-
-
-.active li{
-    background-color: rgba(238, 66, 102, 0.5);
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 20%;
-    overflow: auto;
-    position: fixed;
-    background-color: rgba(255, 210, 63, 1);
-} 
-
-.navbartop ul { 
-    top: 0;
-    height: 85%;
-    margin-bottom: 85%;
-    /* background-color: rgba(255, 210, 63, 1); */
-}
-
-.navbarbottom ul {
-    position: fixed;
-    top: 85%;
-    height: 15%;
-    bottom: 0;
-}
-
-
-
-.navbar li {
-    display: inline;
+.htmlsnippet, .csssnippet {
+    width: 50%;
     float: left;
-    width: 100%;
-    text-align: left;
-} 
+}
 
-.navbar li a, .navfooter{
-    display: block;
-    width: auto;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: rgba(31, 39, 27, 1)
-} 
+.htmlsnippet {
+    margin-left: 0px;
+}
 
-.navbar li a:hover {
-    background-color: rgba(238, 66, 102, 1);
-} 
+.csssnippet {
+    margin-right: 0px;
+}
 
-
-
-
-
-
-.cereal {
-    font-family: Open Sans;
-    font-size: 40px;
-    line-height 100px;
+.htmlbox {
+    width: 98%;
+    border: 5px solid red;
+    height: 80px;
     text-align: center;
-    
-    
+    margin-bottom: 5px;
+}
+
+.header {
+    height: 70px;
+    font-size: 3vw;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: RGBA(0, 0, 0, 0.1);
+}
+
+li {
+    float: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: RGBA(0, 0, 0, 0.2);
+    color: white;
 }
