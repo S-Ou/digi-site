@@ -28,6 +28,11 @@ html {
     z-index: 8;
 }
 
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
 .header:hover {
     color:azure
 }
@@ -268,8 +273,18 @@ hr:before {
     text-align-last: center;
 }
 
+.all a {
+    text-decoration: none;
+    color: white;
+}
+
+.all a:not(.button):hover {
+    text-decoration: underline;
+}
+
 .buttons {
     text-align: center;
+    text-decoration: none;
 }
 
 .button {
@@ -287,12 +302,17 @@ hr:before {
     min-width: 175px;
 }
 
+.button a:hover {
+    text-decoration: none;
+}
+
 .button:hover {
     background-color: rgba(152, 147, 218, 1);
     color: white;
-    border-radius: 22px;
     transition: 350ms;
+    text-decoration: none;
 }
+
 
 img {
     display: block;
@@ -305,15 +325,6 @@ img {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.all a {
-    text-decoration: none;
-    color: white;
-}
-
-.all a:hover {
-    text-decoration: underline;
 }
 
 .codepen {
