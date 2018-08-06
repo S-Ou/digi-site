@@ -259,10 +259,13 @@ hr:before {
 
 
 .all {
-    padding: 80px 20px 10px 20px;
+    padding: 80px 40px 10px 40px;
     transition: 350ms;
     color: white;
     min-height: calc(100vh - 115px);
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 .buttons {
@@ -300,6 +303,25 @@ img {
     border-color: white;
     border-width: 10px;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.codepen {
+    max-width: 70%;
+}
+
+.wireframes {
+    max-width: 50%;
 }
 
 .sketchfab-embed-wrapper {
