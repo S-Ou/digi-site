@@ -4,6 +4,16 @@
             toggleNavigation($(this), $(".nav-pane"));
             changeLetters($(this));
         }); 
+        
+        $("#mainbody").on("click", function () {
+            togglebody($(".toggle-nav"), $(".nav-pane"));
+            changeLetters($(".toggle-nav"));
+        }); 
+        
+        function togglebody(btn, nav) {
+            btn.toggleClass("open");
+            nav.toggleClass("open");
+        }
 
         function toggleNavigation(btn, nav) {
             btn.toggleClass("open");

@@ -7,8 +7,12 @@ html {
     background-color: rgba(98, 95, 99, 1);
 }
 
-.all {
-    padding-top: 10px
+.toggle-nav {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .header {
@@ -16,80 +20,110 @@ html {
     text-align: center;
     font-size: 50px;
     color: white;
-    transition: 250ms;
+    transition: 350ms;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 8;
 }
 
 .header:hover {
-    color: aliceblue;
-    transition; 250ms;
+    color:azure
 }
 
-
-
-
 .nav-pane {
-    transition: 250ms;
+    transition: 350ms;
     position: fixed;
     -webkit-transform: translateX(-350px);
     transform: translateX(-350px);
     top: 0;
     height: 100vh;
     width: 348px;
-/*    background: #EA5548;*/
-    background: rgba(121, 122, 158, 1);
-/*    border-right: 2px solid #e94d3f;*/
-/*    border-right: 2px solid rgba(114, 114, 126, 1);*/
+    /*    background: rgba(121, 122, 158, 1);*/
+    background: rgba(187, 189, 246, 1);
     display: flex;
-/*    flex-direction: column;*/
     justify-content: space-around;
     box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.5);
-    
+    z-index: 99;
 }
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     /*    overflow: hidden;*/
-/*    background-color: rgba(114, 114, 126, 1);*/
+    /*    background-color: rgba(114, 114, 126, 1);*/
     font-size: 15px;
     width: 348px;
     top: 0;
 }
 
-.navbar {}
-
-li {}
+li p {
+    display: block;
+    height: 20px;
+    padding: 14px 16px;
+}
 
 li a {
     display: block;
     width: 316px;
-    color: white;
+    /*    color: white;*/
+    color: rgba(98, 95, 99, 1);
     padding: 14px 16px;
+    height: 20px;
     text-decoration: none;
     background-color: none;
-    transition: 250ms
+    transition: 350ms;
 }
 
 li a:hover {
-    background-color: rgba(152, 147, 218, 1);
-    transition: 250ms;
+    /*    background-color: rgba(152, 147, 218, 1);*/
+    background-color: white;
+    font-size: 17px;
+    transition: 350ms;
+}
+
+hr {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 3px 0 0 0;
+    width: 80%;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8c8c;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
 .active {
-    background-color: rgba(152, 147, 218, 1);
+    /*    background-color: rgba(152, 147, 218, 1);*/
+    background-color: white;
+    font-size: 17px;
+    transition: 350ms;
 }
 
-
-.sketchfab-embed-wrapper {
-    text-align: center;
+#mainbody {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 350ms;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 9;
 }
-
-span {
-    
-}
-
-
 
 
 @media screen and (max-width: 620px) {
@@ -133,20 +167,20 @@ span {
 .nav-pane.open {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    transition: 250ms;
+    transition: 350ms;
 }
 
-.toggle-nav {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
+.nav-pane.open ~ #mainbody {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    transition: 350ms;
 }
 
 .toggle-nav.open span.m,
 .toggle-nav.open span.n,
 .toggle-nav.open span.u {
-    opacity: 1;
+    opacity: 0;
+    color: rgba(98, 95, 99, 1);
 }
 
 .toggle-nav span.m,
@@ -154,7 +188,7 @@ span {
 .toggle-nav span.u {
     font-size: 1.05rem;
     opacity: 0;
-    transition: 250ms;
+    transition: 350ms;
     letter-spacing: 2px;
     color: white;
 }
@@ -166,27 +200,33 @@ span {
 }
 
 .toggle-nav span.e.btn-close span.bar:nth-child(1) {
-    transition: 250ms;
+    transition: 350ms;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 5px;
+    background: rgba(98, 95, 99, 1);
+    border-bottom: 1px solid rgba(98, 95, 99, 1);
 }
 
 .toggle-nav span.e.btn-close span.bar:nth-child(2) {
     opacity: 0;
-    transition: 250ms;
+    transition: 350ms;
+    background: rgba(98, 95, 99, 1);
+    border-bottom: 1px solid rgba(98, 95, 99, 1);
 }
 
 
 .toggle-nav span.e.btn-close span.bar:nth-child(3) {
-    transition: 250ms;
+    transition: 350ms;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     bottom: 5px;
+    background: rgba(98, 95, 99, 1);
+    border-bottom: 1px solid rgba(98, 95, 99, 1);
 }
 
 .toggle-nav span.e span.bar {
-    transition: 250ms;
+    transition: 350ms;
     position: relative;
     display: block;
     background: white;
@@ -204,15 +244,95 @@ span {
 .toggle-nav:hover span.n,
 .toggle-nav:hover span.u {
     opacity: 1;
-    transition: 250ms;
+    transition: 350ms;
 }
 
-/*
-.toggle-nav:hover ~ .header {
-    padding-right: 80px;
-    transition: 250ms;
+.toggle-nav.open:hover span.m,
+.toggle-nav.open:hover span.n,
+.toggle-nav.open:hover span.u {
+    opacity: 1;
+    transition: 350ms;
 }
-.toggle-nav.open ~ .header {
-    padding-right: 80px;
+
+
+
+
+
+.all {
+    padding: 80px 20px 10px 20px;
+    transition: 350ms;
+    color: white;
+    min-height: calc(100vh - 115px);
 }
-*/
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    background-color: rgba(152, 147, 218, 0.2);
+    border: 4px solid rgba(152, 147, 218, 1);
+    color: rgba(187, 189, 246, 1);
+    padding: 20px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 10px 10px 20px 10px;
+    font-weight: bold;
+    transition: 350ms;
+    min-width: 175px;
+}
+
+.button:hover {
+    background-color: rgba(152, 147, 218, 1);
+    color: white;
+    border-radius: 22px;
+    transition: 350ms;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+.sketchfab-embed-wrapper {
+    text-align: center;
+    transform: translateX(-4px);
+    width: 80%;
+}
+
+#sketchfab {
+    border: 8px solid rgba(152, 147, 218, 1);
+    border-radius: 5px;
+    background-color: black;
+}
+
+
+
+h2 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+footer {
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background-color: rgba(121, 122, 158, 1);
+    font-size: 10px;
+    text-align: right;
+    height: 35px;
+}
+
+footer p {
+    padding: 10px 15px;
+}
