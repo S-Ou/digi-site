@@ -358,6 +358,26 @@ h2 {
     padding: 10px 0px;
 }
 
+/*
+code { 
+    background: rgba(114, 114, 126, 1);
+}
+
+pre {
+    white-space: pre-wrap;
+    background: rgba(114, 114, 126, 1);
+    text-align: left;
+    text-align-last: left;
+    border: 15px;
+    border-style: solid;
+    border-width: 10px;    
+    border-radius: 5px;
+    border-color: white;
+    overflow-y: scroll;
+    max-height: 100px;
+}
+*/
+
 
 
 footer {
