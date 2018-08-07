@@ -327,6 +327,10 @@ img {
     margin-bottom: 10px;
 }
 
+.modelgallery img {
+    max-height: 300px;
+}
+
 .codepen {
     max-width: 70%;
 }
