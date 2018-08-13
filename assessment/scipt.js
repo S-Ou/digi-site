@@ -1,4 +1,4 @@
-(function ($) {
+(function ($) {    
     $(document).ready(function () {
         $(".toggle-nav").on("click", function () {
             toggleNavigation($(this), $(".nav-pane"));
