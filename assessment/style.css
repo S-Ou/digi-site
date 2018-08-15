@@ -286,6 +286,7 @@ hr:before {
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
+    overflow-wrap: break-word;
 }
 
 .all a {
@@ -414,8 +415,8 @@ footer p {
 
 @media screen and (max-width: 600px) {
     .nav-pane {
-        -webkit-transform: translateY(100vh);
-        transform: translateY(100vh);
+        -webkit-transform: translateY(110vh);
+        transform: translateY(110vh);
     }
     
     ul, .nav-pane {
@@ -479,5 +480,10 @@ footer p {
     
     .sketchfab-embed-wrapper {
         width: 100%;
+        transform: translateX(0px);
+    }
+    
+    img {
+        transform: translateX(0px);
     }
 }
