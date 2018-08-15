@@ -162,71 +162,7 @@ hr:before {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .nav-pane {
-        -webkit-transform: translateY(100vh);
-        transform: translateY(100vh);
-    }
-    
-    ul, .nav-pane {
-        width: 100%;
-    }
-    
-    li a {
-        padding-left: 0px;
-        padding-right: 0px;
-        text-align: center;
-        width: 100vw;
-    }
-    
-    .toggle-nav {
-        position: fixed;
-        bottom: 15px;
-        top: inherit;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .nav-pane.open {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        transition: 350ms;
-    }
-        
-    .nav-pane.open ~ .toggle-nav {
-        background-color: black;        
-    }
-    
-    .toggle-nav-bg {
-        transform: translateY(0);
-    }
-    
-    .toggle-nav span.m,
-    .toggle-nav span.n,
-    .toggle-nav span.u {
-        opacity: 1;
-    }
-    
-    .toggle-nav.open span.m,
-    .toggle-nav.open span.n,
-    .toggle-nav.open span.u {
-        opacity: 1;
-    }
-    
-    ul {
-        padding-top: 0px;
-    }
-    
-    .header {
-        font-size: 9vw;
-    }
-    
-    .headertxt {
-        position: fixed;
-        top: calc((55px - 9vw) / 2);
-        width: 100%;
-    }
-}
+
 
 /*
 @media screen and (max-width: 450px) {
@@ -474,4 +410,74 @@ footer {
 
 footer p {
     padding: 10px 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-pane {
+        -webkit-transform: translateY(100vh);
+        transform: translateY(100vh);
+    }
+    
+    ul, .nav-pane {
+        width: 100%;
+    }
+    
+    li a {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .toggle-nav {
+        position: fixed;
+        bottom: 15px;
+        top: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-pane.open {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transition: 350ms;
+    }
+        
+    .nav-pane.open ~ .toggle-nav {
+        background-color: black;        
+    }
+    
+    .toggle-nav-bg {
+        transform: translateY(0);
+    }
+    
+    .toggle-nav span.m,
+    .toggle-nav span.n,
+    .toggle-nav span.u {
+        opacity: 1;
+    }
+    
+    .toggle-nav.open span.m,
+    .toggle-nav.open span.n,
+    .toggle-nav.open span.u {
+        opacity: 1;
+    }
+    
+    ul {
+        padding-top: 0px;
+    }
+    
+    .header {
+        font-size: 9vw;
+    }
+    
+    .headertxt {
+        position: fixed;
+        top: calc((55px - 9vw) / 2);
+        width: 100%;
+    }
+    
+    .sketchfab-embed-wrapper {
+        width: 100%;
+    }
 }
