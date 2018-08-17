@@ -13,6 +13,8 @@ html {
     left: 25px;
     cursor: pointer;
     z-index: 100;
+    transform: translateX(-15px);
+    transition: 350ms;
 }
 
 .toggle-nav-bg {
@@ -24,8 +26,8 @@ html {
     border-radius: 0px 5px 0px 0px;
     position: fixed;
     bottom: 0;
-    width: 120px;
-    height: 55px;
+    width: 50px;
+    height: 40px;
     z-index: 98;
     transform: translateY(70px);
 }
@@ -183,6 +185,11 @@ hr:before {
     }
 }
 */
+
+.toggle-nav:hover {
+    transform: translateX(0);
+    transition: 350ms;
+}
 
 .nav-pane.open {
     -webkit-transform: translateX(0);
@@ -461,10 +468,11 @@ footer p {
     
     .toggle-nav {
         position: fixed;
-        bottom: 15px;
+        bottom: 10px;
         top: inherit;
         margin-left: auto;
         margin-right: auto;
+        transform: translateX(-30px);
     }
     
     .nav-pane.open {
@@ -483,14 +491,21 @@ footer p {
     
     .toggle-nav span.m,
     .toggle-nav span.n,
-    .toggle-nav span.u {
-        opacity: 1;
-    }
-    
+    .toggle-nav span.u,
     .toggle-nav.open span.m,
     .toggle-nav.open span.n,
-    .toggle-nav.open span.u {
-        opacity: 1;
+    .toggle-nav.open span.u,
+    .toggle-nav:hover span.m,
+    .toggle-nav:hover span.n,
+    .toggle-nav:hover span.u,
+    .toggle-nav.open:hover span.m,
+    .toggle-nav.open:hover span.n,
+    .toggle-nav.open:hover span.u {
+        opacity: 0;
+    }
+    
+    .toggle-nav:hover {
+        transform: translateX(-30px);
     }
     
     ul {
