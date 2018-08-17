@@ -49,8 +49,8 @@
             $("img").each(function(i){
                 var imgHeight = $('img').eq(i).css('height');
                 $('.imgtxt').eq(i).css('height', imgHeight);
-                console.log(imgHeight);
-                console.log(i);
+//                console.log(imgHeight);
+//                console.log(i);
             });
 
             $("img").each(function(i){
