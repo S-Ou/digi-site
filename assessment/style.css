@@ -1,3 +1,7 @@
+/*
+Samuel Ou 2018
+*/
+
 * {
     margin: 0 auto;
     font-family: 'Roboto';
@@ -164,8 +168,6 @@ hr:before {
     }
 }
 
-
-
 /*
 @media screen and (max-width: 450px) {
     .nav-pane {
@@ -261,6 +263,7 @@ hr:before {
     border-bottom: 1px solid white;
     width: 15px;
     height: 1px;
+/*    margin: 3px 1px;*/
 }
 
 .toggle-nav span.e span.bar:nth-child(2) {
@@ -413,28 +416,6 @@ h2 {
     padding: 10px 0px;
 }
 
-/*
-code { 
-    background: rgba(114, 114, 126, 1);
-}
-
-pre {
-    white-space: pre-wrap;
-    background: rgba(114, 114, 126, 1);
-    text-align: left;
-    text-align-last: left;
-    border: 15px;
-    border-style: solid;
-    border-width: 10px;    
-    border-radius: 5px;
-    border-color: white;
-    overflow-y: scroll;
-    max-height: 100px;
-}
-*/
-
-
-
 footer {
     width: 100%;
     bottom: 0;
@@ -449,7 +430,7 @@ footer p {
     padding: 10px 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /* Mobile css */ {
     .nav-pane {
         -webkit-transform: translateY(110vh);
         transform: translateY(110vh);
